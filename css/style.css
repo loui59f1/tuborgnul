@@ -184,12 +184,20 @@ nav {
 
 header {
 	width: 100vw;
-	height: 400px;
+	height: 500px;
 	background-image: url(../img/splash_bg.jpg);
 	background-size: cover;
 	background-position: 0 100%;
 	background-attachment: fixed;
 	text-align: center;
+	border-bottom: 100px solid #BEE0D9;
+}
+
+.overlay {
+	width: 100vw;
+	height: 400px;
+	background-color: #093A82;
+	opacity: 0.5;
 }
 
 .heading {
@@ -232,7 +240,9 @@ header h2 {
 
 header .header_can {
 	position: absolute;
-	width: 20%;
+	top: 10vw;
+	z-index: 4;
+	width: 15%;
 }
 
 h1 {
