@@ -230,6 +230,11 @@ header h2 {
 	margin: 0;
 }
 
+header .header_can {
+	position: absolute;
+	width: 20%;
+}
+
 h1 {
 	font-size: 2rem;
 	font-family: 'Roboto Condensed', sans-serif;
