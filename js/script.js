@@ -1,17 +1,25 @@
-window.addEventListener("load", sidenVises);
+// Get the modal
+let modal = document.getElementById("myModal");
 
-function sidenVises() {
-	console.log(sidenVises);
+// Get the button that opens the modal
+let btn = document.getElementById("play");
 
-	document.querySelector("#closebtn").addEventListener("click", closeNav);
-	document.querySelector("#openbtn").addEventListener("click", openNav);
+// Get the <span> element that closes the modal
+let span = document.getElementsByClassName("close")[0];
 
+// When the user clicks the button, open the modal
+btn.onclick = function () {
+	modal.style.display = "block";
 }
 
-function openNav() {
-	document.getElementById("myNav").style.width = "80%";
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+	modal.style.display = "none";
 }
 
-function closeNav() {
-	document.getElementById("myNav").style.width = "0%";
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+	}
 }

@@ -16,23 +16,7 @@
 
 	<nav>
 		<div class="row">
-			<div class="logo">Logo</div>
-			<ul class="menu_links">
-				<li><a href="">Info</a></li>
-				<li><a href="">Video portfolio</a></li>
-				<li><a href="">Kontakt os</a></li>
-			</ul>
-		</div>
-		<div class="burger_menu">
-			<div id="myNav" class="overlays">
-				<span id="closebtn">&times;</span>
-				<ul class="overlays-content">
-					<li><a href="">Info</a></li>
-					<li><a href="">Video portfolio</a></li>
-					<li><a href="">Kontakt os</a></li>
-				</ul>
-			</div>
-			<span id="openbtn">&#9776;</span>
+			<div class="logo"></div>
 		</div>
 	</nav>
 
@@ -40,35 +24,38 @@
 	<header>
 		<div class="overlay"></div>
 		<img src="img/logof.svg" alt="" class="logo">
-		<img src="img/tuborg_can.png" alt="" class="header_can">
 		<div class="row">
+			<img src="img/tuborg_can.png" alt="" class="header_can">
 			<div class="header_text">
 				<h1>TUBORG NUL</h1>
 				<h2>en øl til hverdag</h2>
+			</div>
+			<div class="play">
+				<img src="img/play_button.svg" alt="" class="play_img" id="play">
 			</div>
 		</div>
 	</header>
 
 	<section id="intro">
 		<div class="row">
-			<h4>En lille overskrift</h4>
-			<h1>Tuborg Nul vil være det alkoholfrie alternativ, <br>der gør din hverdag nemmere</h1>
+			<h4>Præcis ligesom som ingen andre øl</h4>
+			<h1 class="heading_intro">Tuborg Nul er det alkoholfrie alternativ, der gør din hverdag nemmere</h1>
 		</div>
 		<div id="icon_box" class="row">
 			<div class="column">
 				<img src="img/icon_1.png" alt="">
-				<h3>En lille overskrift</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+				<h3>Alkoholfri øl hitter</h3>
+				<p>De sidste 3 år er salget af alkoholfri øl i Danmark steget med hele 55%. </p>
 			</div>
 			<div class="column">
-				<img src="img/icon_1.png" alt="">
-				<h3>En lille overskrift</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+				<img src="img/icon_2.png" alt="">
+				<h3>Samme gode smag</h3>
+				<p>Tuborg NUL er brygget med samme princip, som alle andre Tuborg øl. En forfriskende og velsmagende øl.</p>
 			</div>
 			<div class="column">
-				<img src="img/icon_1.png" alt="">
-				<h3>En lille overskrift</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+				<img src="img/icon_3.png" alt="">
+				<h3>En øl til folket</h3>
+				<p>Tuborg NUL er en øl til alle. En øl der vil vise danskerne, hvor normalt det er at vælge alkoholfrit.</p>
 			</div>
 		</div>
 	</section>
@@ -78,21 +65,22 @@
 			<div class="column">
 				<h3 class="orange_text">En lille overskrift</h3>
 				<h1>Alle har deres grunde til at vælge alkoholfri.</h1>
-				<button>Klik</button>
+				<p>Vi sætter fokus på alle de gode grunde til at vælge alkoholfri øl. Deltag i vores konkurrence på Facebook om at vinde en ramme Tuborg NUL og en minihøjtaler. </p>
+				<button>Deltag</button>
 			</div>
 			<div class="column">
 				<div class="mini_row">
 					<div class="info_img"><img src="img/15kcal.png" alt=""></div>
 					<div class="afsnit">
-						<h3>En lille overskrift</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+						<h3>Spar på kalorierne</h3>
+						<p>Du behøver ikke have dårlig samvittighed, når du åbner Tuborg NUL. Den er nemlig brygget med god smag og kun 15 kalorier per 100 ml. </p>
 					</div>
 				</div>
 				<div class="mini_row">
 					<div class="info_img2"><img src="img/0procent.png" alt=""></div>
 					<div class="afsnit">
-						<h3>En lille overskrift</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+						<h3>Helt uden alkohol</h3>
+						<p>Tuborg NUL er en pilsner brygget helt uden alkohol. Ikke 0.2% eller 0.5% - men 0.0%</p>
 					</div>
 				</div>
 			</div>
@@ -101,29 +89,32 @@
 
 	<section id="info_boxes">
 		<div class="first_row">
-			<h4>En lille overskrift</h4>
-			<p>#hvaderdingrund?</p>
+			<h4>#hvaderdingrund?</h4>
 		</div>
 		<div class="row">
 			<div class="column">
 				<img src="img/box_1.jpg" alt="">
-				<h2 class="first-line">...fordi jeg har lyst</h2>
-				<p>Gitte Hansen</p>
+				<div class="reason">
+					<h2 class="first-line">...fordi jeg har lyst</h2>
+				</div>
 			</div>
 			<div class="column">
 				<img src="img/box_2.jpg" alt="">
-				<h2 class="second-line">...fordi jeg skal køre hjem</h2>
-				<p>Gitte Hansen</p>
+				<div class="reason">
+					<h2 class="second-line">...fordi jeg skal køre hjem</h2>
+				</div>
 			</div>
 			<div class="column">
 				<img src="img/box_3.jpg" alt="">
-				<h2 class="third-line">...fordi jeg er gravid</h2>
-				<p>Gitte Hansen</p>
+				<div class="reason">
+					<h2 class="third-line">...fordi jeg er gravid</h2>
+				</div>
 			</div>
 			<div class="column">
 				<img src="img/box_4.jpg" alt="">
-				<h2 class="fourth_line">...fordi jeg skal til eksamen<br> i morgen</h2>
-				<p>Gitte Hansen</p>
+				<div class="reason">
+					<h2 class="fourth_line">...fordi jeg skal til eksamen<br> i morgen</h2>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -139,18 +130,18 @@
 		<div class="news_row">
 			<div class="column">
 				<img src="img/news_1.jpg" alt="">
-				<h4 class="date">20-09-2020</h4>
-				<h3 class="title">En artikel eller overskrift</h3>
+				<h4 class="date">02-10-2020</h4>
+				<h3 class="title">Flere vælger alkoholfri øl</h3>
 			</div>
 			<div class="column">
 				<img src="img/news_2.jpg" alt="">
-				<h4 class="date">20-09-2020</h4>
-				<h3 class="title">En artikel eller overskrift</h3>
+				<h4 class="date">18-07-2020</h4>
+				<h3 class="title">Deltag i Tuborg NUL løbet</h3>
 			</div>
 			<div class="column">
 				<img src="img/news_3.jpg" alt="">
-				<h4 class="date">20-09-2020</h4>
-				<h3 class="title">En artikel eller overskrift</h3>
+				<h4 class="date">20-06-2020</h4>
+				<h3 class="title">Vind med Tuborg NUL</h3>
 			</div>
 		</div>
 	</section>
@@ -176,6 +167,19 @@
 			</div>
 		</div>
 	</footer>
+
+	<div id="myModal" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<video width="100%" controls autoplay>
+				<source src="video/campaign_movie.mp4" type="video/mp4">
+				Your browser does not support HTML video.
+			</video>
+		</div>
+
+	</div>
 
 	<script src="js/script.js"></script>
 
