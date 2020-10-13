@@ -10,6 +10,122 @@
 	<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 
+	<style>
+		header {
+			height: 400px;
+		}
+
+		.overlay {
+			width: 100vw;
+			height: 332px;
+			background-color: #093A82;
+			opacity: 0.5;
+			position: relative;
+		}
+
+		#video .video_row {
+			text-align: center;
+			max-width: 1100px;
+			margin: 0 auto;
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+			grid-gap: 2em;
+			padding-top: 50px;
+			padding-bottom: 0px;
+		}
+
+		#video h1 {
+			font-size: 28px;
+			font-weight: 600;
+			letter-spacing: 1.6px;
+		}
+
+		#video .column {
+			text-align: left;
+		}
+
+		#video h4 {
+			color: #000;
+			margin-bottom: 50px;
+			font-weight: 400;
+		}
+
+		.play_video img {
+			position: absolute;
+		}
+
+		#video .column img {
+			width: 100%;
+		}
+
+		#video .play_video img {
+			width: 150px !important;
+			margin-left: 95px;
+			margin-top: -200px;
+			cursor: pointer;
+		}
+
+		footer {
+			padding-top: 10px;
+		}
+
+		#video_campaign {
+			padding-top: 50px;
+		}
+
+		/* Modal Content */
+		#video_campaign .modal-content {
+			background-color: #fefefe;
+			margin: auto;
+			padding: 0px;
+			width: 40vw;
+			height: 40vw;
+		}
+
+		#play_video {
+			animation: pulse 2s infinite;
+			animation-timing-function: linear;
+			cursor: pointer;
+		}
+
+		#play_video2 {
+			animation: pulse 2s infinite;
+			animation-timing-function: linear;
+			cursor: pointer;
+		}
+
+		@keyframes pulse {
+			0% {
+				transform: scale(0.8);
+			}
+
+			70% {
+				transform: scale(1);
+			}
+
+			100% {
+				transform: scale(0.8);
+			}
+		}
+
+		@media screen and (max-width: 1150px) {
+			#video .video_row {
+				padding: 20px !important;
+			}
+		}
+
+		@media screen and (min-width: 1200px) {
+			.header_text {
+				text-align: left;
+				position: absolute;
+				top: 200px;
+				margin-left: -15px;
+				z-index: 10;
+			}
+		}
+
+	</style>
+
 </head>
 
 <body>
@@ -25,7 +141,6 @@
 		<div class="overlay"></div>
 		<img src="img/logof.svg" alt="" class="logo">
 		<div class="row">
-			<img src="img/tuborg_can.png" alt="" class="header_can">
 			<div class="header_text">
 				<h1>Video portfolio</h1>
 				<h2>gruppe 4</h2>
@@ -33,26 +148,21 @@
 		</div>
 	</header>
 
-	<section id="intro">
-		<div class="row">
-			<h4>Kampagnefilm</h4>
-			<h1 class="heading_intro">Tuborg Nul er det alkoholfrie alternativ, der gør din hverdag nemmere</h1>
-		</div>
-		<div id="icon_box" class="row">
+	<section id="video">
+		<div class="video_row">
 			<div class="column">
-				<img src="img/icon_1.png" alt="">
-				<h3>Alkoholfri øl hitter</h3>
-				<p>De sidste 3 år er salget af alkoholfri øl i Danmark steget med hele 55%. </p>
+				<img src="img/socialmedia_campaign.jpg" alt="">
+				<div class="play_video">
+					<img src="img/play_button.svg" alt="Afspil knap" id="play_video">
+					<p>Kampagnefilm til sociale medier</p>
+				</div>
 			</div>
 			<div class="column">
-				<img src="img/icon_2.png" alt="">
-				<h3>Samme gode smag</h3>
-				<p>Tuborg NUL er brygget med samme princip, som alle andre Tuborg øl. En forfriskende og velsmagende øl.</p>
-			</div>
-			<div class="column">
-				<img src="img/icon_3.png" alt="">
-				<h3>En øl til folket</h3>
-				<p>Tuborg NUL er en øl til alle. En øl der vil vise danskerne, hvor normalt det er at vælge alkoholfrit.</p>
+				<img src="img/video_campaign.jpg" alt="">
+				<div class="play_video">
+					<img src="img/play_button.svg" alt="Afspil knap" id="play_video2">
+					<p>Kampagnefilm "Alle Har Sine Grunde"</p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -68,7 +178,7 @@
 				<img src="img/logo_2.svg" alt="">
 			</div>
 			<div class="column align_right">
-				<h3><a href="#">Kontakt os</a></h3>
+				<h3><a href="index.html">Kampagnesite</a></h3>
 				<h3><a href="video.html">Video portfolio</a></h3>
 			</div>
 			<ul class="social_icons">
@@ -83,11 +193,21 @@
 		</div>
 	</footer>
 
-	<div id="myModal" class="modal">
-
+	<div id="video_campaign" class="modal">
 		<!-- Modal content -->
 		<div class="modal-content">
-			<span class="close">&times;</span>
+			<span class="close" id="span2">&times;</span>
+			<video width="100%" controls autoplay>
+				<source src="video/socialmedia_campaign.mp4" type="video/mp4">
+				Your browser does not support HTML video.
+			</video>
+		</div>
+	</div>
+
+	<div id="socialmedia_campaign" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close" id="span3">&times;</span>
 			<video width="100%" controls autoplay>
 				<source src="video/campaign_movie.mp4" type="video/mp4">
 				Your browser does not support HTML video.
@@ -95,7 +215,50 @@
 		</div>
 	</div>
 
-	<script src="js/script.js"></script>
+	<script>
+		// Get the modal
+		let modal2 = document.getElementById("video_campaign");
+		let modal3 = document.getElementById("socialmedia_campaign");
+
+		// Get the button that opens the modal
+		let btn2 = document.getElementById("play_video");
+		let btn3 = document.getElementById("play_video2");
+
+		// Get the <span> element that closes the modal
+		let span2 = document.getElementsByClassName("close")[0];
+		let span3 = document.getElementsByClassName("close")[1];
+
+		btn2.onclick = function() {
+			modal2.style.display = "block";
+		}
+
+		btn3.onclick = function() {
+			modal3.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span2.onclick = function() {
+			modal2.style.display = "none";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span3.onclick = function() {
+			modal3.style.display = "none";
+		}
+
+		window.onclick = function(event) {
+			if (event.target == modal2) {
+				modal2.style.display = "none";
+			}
+		}
+
+		window.onclick = function(event) {
+			if (event.target == modal3) {
+				modal3.style.display = "none";
+			}
+		}
+
+	</script>
 
 </body>
 
